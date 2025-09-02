@@ -20,16 +20,8 @@ void loop() {
 
   Serial.println(lectureAnalogique);
   delay(100);
-  /*
-  if(lectureAnalogique> 2000){
-
+  monPixel = CRGB(((lectureAnalogique*255)/4095), 0, 0);
+  FastLED.show();
+  
     
-    monPixel = CRGB(0, 0, 255);
-    FastLED.show();
-
-  }else{
-    monPixel = CRGB(0, 0, 0);
-    FastLED.show();
-  }
-    */
 }
