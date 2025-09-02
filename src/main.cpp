@@ -15,11 +15,15 @@ void setup() {
 
 void loop() {
   int lectureAnalogique;
+  
   lectureAnalogique = analogRead(MA_BROCHE_ANGLE);
 
   Serial.println(lectureAnalogique);
   delay(100);
+  /*
   if(lectureAnalogique> 2000){
+
+    
     monPixel = CRGB(0, 0, 255);
     FastLED.show();
 
@@ -27,4 +31,5 @@ void loop() {
     monPixel = CRGB(0, 0, 0);
     FastLED.show();
   }
+    */
 }
